@@ -1,0 +1,146 @@
+.set-title2 {font-size: 13px !important;}
+.text-anything {margin: 0;color: #1768a6;text-align:center;}
+.text-anything2 {text-align: center; margin-bottom: 43px;}
+
+.signup_scroll {width: 100%;height: 90px;position: fixed;bottom: -90px;left: 0;}
+.signup_scroll.bgsignup {background: #fff none repeat scroll 0% 0%;opacity: 0.97;}
+
+.navbar-brand>img {
+    display: block;
+    height: 74px;
+    /*margin-top: 11px;*/
+}
+
+
+
+.tagcloud06 ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none !important;
+	text-align:center;
+}
+.tagcloud06 ul li {
+	display: inline-block;
+	margin: 0 0 .3em 1em;
+	padding: 0;
+}
+.tagcloud06 ul li a {
+	position: relative;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 1em 0 .75em;
+	background-color: #3498db;
+	border-radius: 0 3px 3px 0;
+	color: #fff;
+	font-size: 13px;
+	text-decoration: none;
+	-webkit-transition: .2s;
+	transition: .2s;
+}
+.tagcloud06 ul li a::before {
+	position: absolute;
+	top: 0;
+	left: -15px;
+	z-index: -1;
+	content: '';
+	width: 30px;
+	height: 30px;
+	background-color: #3498db;
+	border-radius: 50%;
+	-webkit-transition: .2s;
+	transition: .2s;
+}
+.tagcloud06 ul li a::after {
+	position: absolute;
+	top: 50%;
+	left: -6px;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 6px;
+	height: 6px;
+	margin-top: -3px;
+	background-color: #fff;
+	border-radius: 100%;
+	display:none;
+}
+.tagcloud06 ul li span {
+	display: block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.tagcloud06 ul li a:hover {
+	background-color: #555;
+	color: #fff;
+}
+.tagcloud06 ul li a:hover::before {
+	background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.et_pb_section_6.et_pb_section {
+    padding-top: 110px;
+    padding-right: 0px;
+    padding-bottom: 105px;
+    padding-left: 0px;
+}
+.et_pb_section {
+    background-color: #ffffff;
+}
+.et_pb_section_6 {
+    background-image: url(http://9trax.com/wp-content/uploads/2018/01/Kids.jpg);
+}
+@media only screen and (min-width: 1350px)
+.et_pb_section {
+    padding: 54px 0;
+}
+@media (min-width: 981px)
+.et_pb_section {
+    padding: 4% 0;
+}
+.et_pb_section {
+    position: relative;
+    background-color: #fff;
+}
+.et_pb_slider .et_pb_slide, .et_pb_section {
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: 100%;
+    -moz-background-size: cover;
+    background-size: 100%;
+    background-size: cover;
+}
+
+.et_pb_row .et_pb_column:last-child, .et_pb_row .et_pb_column.et-last-child, .et_pb_row_inner .et_pb_column:last-child, .et_pb_row_inner .et_pb_column.et-last-child {
+    margin-right: 0 !important;
+}
+
+.bantext h1 {color: rgb(255, 255, 255);padding: 0px 72px;text-align: center;font-size: 41px;}
+.bantext p {color: rgb(255, 255, 255);padding: 0px 34px;text-align: center;font-size: 16px;}
+.banbutd {text-align:center;margin-top:10px;}
+
+.traxgeoimg {float: left;height: 50px;}
+.text-uppercase2 {text-transform: uppercase;font-weight: 800;letter-spacing: 0.08em;line-height: 25px;margin-bottom: 36px;text-align: center;
+font-size: 1.7em;}
+.traxgeopad { padding: 0px 116px;}
+.traxgeopad h4 {line-height: 17px;padding: 0px 76px;}

@@ -1,0 +1,171 @@
+﻿html,body { height: 100%;}
+body,input,button{font-family: arial, microsoft yahei,"\5B8B\4F53"; }
+.login-bg { background-repeat:no-repeat; background-position:center top; background-size:100% 100%;}
+.login-bg-default {background-image: url(../images/background.jpg); }
+.login-bg:before { content: ""; position: fixed; left: 0; top: 0; z-index: -1; width:100%; height:100%; background-color: rgba(0,0,0,.7); }
+.login-bg-tianyan { background-image: url(../brand/tianyan/bg-login.jpg);}
+.login-bg-tianyan:before { display: none;}
+.login-bg-tianyan .login .form-checkbox, .login-bg-tianyan .login .form-checkbox a, .login-bg-tianyan .copyright { color:#333;}
+.login-bg-tianyan .login .form-username, .login-bg-tianyan .login .form-password { box-shadow: 0 0 1px #6b6b6b;}
+.login-bg-tianyan .mappin { display: none;}
+
+.login-bg-skyzaixian { background-image: url(../brand/skyzaixian/bg-login.jpg);}
+.login-bg-skyzaixian .form-checkbox .checkbox { background-color: rgba(0,0,0,.8)}
+
+.mappin {opacity:.4;}
+.mappin>i, .mappin>i:before {  position:absolute;  display: block; width: 20px; height: 20px; border: 5px solid; border-radius: 50%;  }
+.mappin>i:before { content: ""; position: absolute; top: -5px; left: -5px; border-bottom-right-radius: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg);  transform: rotate(45deg); }
+.mappin>i:after { content: ""; position: absolute; left: 50%; bottom: -11px; width: 10px; height: 4px; margin-left: -5px; box-shadow: inset 0 0 2px rgba(255,255,255,1); border-radius: 50%; -webkit-animation: scale-zoom 1s infinite; -moz-animation: scale-zoom 1s infinite; -ms-animation: scale-zoom 1s infinite;  animation: scale-zoom 1s infinite;}
+.mappin .shenzhen{left: -110px; top: 175px; -webkit-transform:scale(2, 2); -moz-transform:scale(2, 2); -ms-transform:scale(2, 2);    transform:scale(2, 2);  }
+.mappin .shenzhen,.mappin .shenzhen:before,.mappin .santiago, .mappin .santiago:before{ border-color: rgb(208,128,73); }
+.mappin .beijing{left: -102px; top: 126px; }
+.mappin .beijing,.mappin .beijing:before { border-color: rgb(203,73,73); }
+.mappin .dubai{left: -318px; top: 182px; }
+.mappin .dubai,.mappin .dubai:before,.mappin .canberra,.mappin .canberra:before,.mappin .washington, .mappin .washington:before{ border-color: rgb(104,176,94); }
+.mappin .canberra{ left: 13px; top: 368px; }
+.mappin .washington{ left: 486px; top: 132px; }
+.mappin .losangeles { left: 350px; top: 153px;}
+.mappin .losangeles,.mappin .losangeles:before { border-color: rgb(203,195,73); }
+.mappin .santiago { left: 511px; top: 358px;}
+
+@media screen and (min-width:1024px){
+.mappin .shenzhen{ left: -409px; top: 297px; }
+.mappin .beijing{  left: -119px; top: 287px; }
+.mappin .canberra{ left: 144px; top: 254px;}
+.mappin .washington{left: 662px; top: 118px;}
+.mappin .losangeles{ left: 365px; top: 194px;}
+.mappin .santiago { left: 772px; top: 2px;}
+}
+
+@media screen and (max-width:768px){
+.mappin .shenzhen{ left: -409px; top: 297px; }
+.mappin .beijing{  left: -119px; top: 385px; }
+.mappin .canberra{ left: 144px; top: 254px;}
+.mappin .washington{left: 499px; top: 9px;}
+.mappin .losangeles{ left: 365px; top: 194px;}
+.mappin .santiago { left: 772px; top: 2px;}
+}
+
+
+.login { width: 400px; position: fixed; left: 50%; top:50%; margin-left: -159px; margin-top:-185px; background: rgba(255, 255, 255, .95); padding: 30px 40px; }
+.logo-login, .login .form-group, .login .form-checkbox { margin-bottom: 20px; }
+.login .form-tip {top:100px; color:#ea621fd9; font-weight: bold;}
+.login .form-control, .login .btn { height: 50px; border: 0; border-radius: 0; }
+/*.login .form-control { padding-left: 52px; font-size: 20px; line-height: 38px; }*/
+.login .form-control { padding-left: 52px; font-size: 15px; line-height: 38px; border: 1px solid #ddd; box-shadow: none; }
+.login .btn { height: 50px; background-color: #1e5fb9; font-size: 18px; color: #fff; }
+.login .form-username,.login .form-password { position:relative;} 
+.login .form-username:before,.login .form-password:before { content:""; position:absolute; left:0; top:0;  width:52px; height:100%; background-repeat: no-repeat; background-position: 10px center;}
+.login .form-username:before {background-image:url(../images/icon-user.svg); background-size: 45%; }
+.login .form-password:before  {background-image:url(../images/icon-key.svg); background-size: 45%; }
+.login .form-checkbox { margin: -10px 0 10px 0; overflow: hidden; }
+.login .form-checkbox,.login .form-checkbox a { color: #fff; text-decoration: none; }
+.login .form-checkbox a {overflow: hidden;text-overflow: ellipsis; white-space: nowrap; display: inline-block; color: #555; }
+.login .form-checkbox label { font-weight: normal; margin-bottom:0; max-width:103px;overflow:hidden;text-overflow:ellipsis;display:inline-block;white-space:nowrap;}
+.login .form-checkbox a:hover { color: #4d94dd; }
+.form-checkbox .checkbox {display: inline-block; height: 18px; width: 18px; margin-top: 0; margin-bottom: 5px; vertical-align: bottom; background-color:#252c35\0; background-color:rgba(204,204,204,.48); }
+.form-checkbox .checkbox input { cursor: pointer; height: 18px; opacity: 0; filter:alpha(opacity=0)\9; vertical-align: middle; width: 18px; margin:0; position:static; }
+.form-checkbox .checked {background-color:#4d94dd; background-repeat:no-repeat; background-position:center center;   background-image:url(../images/icon-hook.svg); background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC2SURBVDhPY2AYWeDfv3+KQHwBiJ1J9jlQkw4QP/kPBED6FxAHoRgCFGcGCrphMxkobg7Eb0CaYQDI3wZXCxRkAwqsh5peg2wIUNwJiD8jawayV4H0wNUBFexEM70PyGcEigeCnIsmNwvkWhSXAhX5AfE3NIV7gGJ/0cS6QAZjDUCghANQw0c0pyL7uYxgyANVGwMNeY1mK8gVaQQ1wxQAFWugRVcY0ZphCoEGyEITjDvJmoeeBgCmNBfdBpk2sgAAAABJRU5ErkJggg==")\9; }
+/* 增加 车之城 定制样式  start*/
+.form-checkbox .checked.ts-checked{background-color:#C70A27!important;}
+.login .btn.ts-btn{background-color: #C70A27!important;}
+.login .form-checkbox .fr.ts-txt a,.login .form-checkbox .ts-rembem{color:#fff}
+/* 增加定制样式 end */
+
+.login .checkbox span { color: #ddd; }
+.login .form-checkbox .fr .demo{color:#7abaf1;}
+.side-QRcode{position:absolute; top:50%; right:10px;margin-top:-125px;}
+
+.footer { position:fixed;  left:0; bottom:0; width:100%;}
+.language {padding:15px 0; }
+.language ul {margin-bottom:0;}
+.language a { position: relative; display: inline-block;  text-decoration: none; }
+.language a img {height: 25px;margin: 0 5px;width: 35px;  }
+.language .active a img {outline:1px solid #4d94dd; outline-offset:2px;}
+.language a:before {content: attr(title); position: absolute; top:-20px; left: 50%; display: none; font-size: 12px; color: #fff; color: rgba(255,255,255,.8); white-space: nowrap; -webkit-transform:translate(-50%,0);-moz-transform:translate(-50%,0); transform:translate(-50%,0); }
+.language a:hover:before { display: block;}
+
+.certification { width:100%; height: 47px; padding-bottom:8px; background-color:rgba(0,0,0,.2);}
+.certification a { display: inline-block; height: 39px;  margin-right: 5px; border:1px solid #ddd; }
+.certification a img {display: block; height: 100%;}
+
+.copyright { line-height: 30px;color: #fff; font-size: 12px; background-color:rgba(0,0,0,.2);}
+.copyright a { color: #65b8ff;}
+
+@keyframes scale-zoom {
+form {
+-moz-transform:scale(1, 1);
+-ms-transform:scale(1, 1);
+transform:scale(1, 1);
+opacity:1;
+}
+to {
+-moz-transform:scale(5, 5);
+-ms-transform:scale(5, 5);	
+transform:scale(5, 5);
+opacity:0;
+}
+}
+
+@-webkit-keyframes scale-zoom {
+form {
+-webkit-transform:scale(1, 1);
+opacity:1;
+}
+to {
+-webkit-transform:scale(5, 5);
+opacity:0;
+}
+}
+
+/* ie6~8 */
+@media \0screen\,screen\9  {
+.login-bg:before { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAWSURBVChTY2BgYNhMJB5ViDcEqBw8AJntRe1kR/KkAAAAAElFTkSuQmCC");}
+.mappin { display:none;}
+.login .form-username .username {background:url(../images/icon-user.png) no-repeat 10px center #fff;}
+.login .form-password .password {background:url(../images/icon-key.png) no-repeat 10px center #fff;}
+}
+
+/*浏览器升级提示*/
+.browser{ position:fixed; left:0; top:0; width:100%; padding:15px; text-align:center; background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAWSURBVChTY2BgYDAmEo8qxBsCVA4eANiVE+3mi7vjAAAAAElFTkSuQmCC");}
+.browser-instructions{ font-size: 18px; font-weight:bold;  color: orange; }
+.browser-list a{ color:#add4f3; font-size:12px; padding-right:15px;}
+.browser-list a:hover{ text-decoration:underline;}
+.browser-list a img { margin-right:10px;} 
+
+
+/* .browser{ position:absolute; left:50%; width:1366px; margin-top:10px; margin-left:-683px; text-align:center;}
+.browser-instructions{ font-size: 16px; font-weight:bold;  color: orange; }
+.browser-list{ font-family: SimSun;}
+.browser-list a{ color:#add4f3; font-size:12px; padding-right:15px;}
+.browser-list a:hover{ text-decoration:underline;}
+.browser-list a img { margin-right:10px;} */
+
+/* 密码强度  */
+.password-strength {width: 180px; margin-top:8px; font-size: 12px;text-align: center;color: #666;}
+.password-strength ul {display:table; table-layout: fixed;   width: 100%; margin: 0; padding: 0;}
+.password-strength ul li {display:table-cell; list-style: none; padding: 0;}
+.password-strength .strength-bar {  border: 1px solid #aaa;border-radius: 14px;  background-color:#ccc;}
+.password-strength .strength-bar li {  height: 8px; border:2px solid #fff;  }
+.password-strength .strength-bar li.first { border-left-width: 3px; border-top-left-radius: inherit; border-bottom-left-radius: inherit; }
+.password-strength .strength-bar li.last { border-right-width: 3px; border-top-right-radius: inherit; border-bottom-right-radius: inherit; }
+.password-strength .strength-bar li span { width: 0; height: 8px; display: block; border-top-left-radius: inherit; border-bottom-left-radius: inherit;border-top-right-radius: inherit; border-bottom-right-radius: inherit; transition: width .5s; }
+.password-strength .first span{ background-color: #ec3701; }
+.password-strength .center span{ background-color: #f78115; }
+.password-strength .last span{ background-color: #6ba001; }
+.password-strength.weak .first span, .password-strength.medium .first span,.password-strength.medium .center span,.password-strength.strong .first span, .password-strength.strong .center span, .password-strength.strong .last span{ width: 100%; }
+.form-group .error { color: red; margin-bottom: 0; margin-top: 5px; }
+
+
+.ts_input_left{
+    width: 26%;
+}
+
+.ts_button_right{
+    width: 24%;
+}
+
+.ts_padding_vifi{
+    padding:  6px 129px 6px 5px;
+    margin-left: -20px;
+}

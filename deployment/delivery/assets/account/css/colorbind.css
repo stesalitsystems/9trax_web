@@ -1,0 +1,23 @@
+/*!
+ * Designed and built by send2saheb@gmail.com
+ */
+.site {
+    background-color: #060606!important;}
+.GrayBg {
+    background: #0b0a0a !important;}
+ul.topm li a {
+    color: #FFF !important;
+}
+.containerFluedHeader {
+    background: #1e1c1c!important;}
+.BlueRegular {
+    background: #36383b !important;
+}
+.topnav ul li.current_page_item a, .topnav ul li a.a_hover_main, .newtopnav ul li a:hover {
+    background: #f5f20b!important;
+    color: #110f0f!important;
+}
+.par1 h1 {
+    color: #F9EE11!important;}
+.par1 p {
+    color: #fff!important;}
